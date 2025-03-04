@@ -1,7 +1,7 @@
 
-# ECG Re-identification Project
+# ECG De-anonymization Attacks Project 
 
-This project aims to re-identify users based on ECG data using the **Biometric Human Identification ECG Database (ecgiddb)**.
+This project aims to re-identify users based on ECG data using the **Biometric Human Identification ECG Databases (ECG-IDB+MIT-BIH)**.
 
 ## Project Structure
 
@@ -12,14 +12,15 @@ This project aims to re-identify users based on ECG data using the **Biometric H
 
 ## Getting Started
 
-1. Clone the repository.
-2. Install the dependencies: `pip install -r requirements.txt`.
+1. Install the dependencies: `pip install -r requirements.txt`.
+2. Prepare datasets and paths.
 3. Run the code: `python src/main.py`.
 
 ## Data Preparation
 - The ECG data is divided into two categories:
-  - `anonymized/` - 80% of the dataset used for training.
-  - `identified/` - 20% of the dataset used for testing and re-identification.
+  - `anonymized/` - 75% of the dataset's records were used as de-identified.
+  - `identified/` - 25% of the dataset's records were used for re-identification.
+- 3 different splits were done for cross-validation.
 =======
 # ecg_re-id
 
